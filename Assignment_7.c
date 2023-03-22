@@ -6,7 +6,8 @@ int main() {
    int arr[] ={97, 16, 45, 63, 13, 22, 7, 58, 72};
     printf( "number of swaps: %d \n" , bubbleSort(arr, sizeof(arr)/sizeof(int)));
 
-}
+}//end of main()
+
 int bubbleSort(int arr[], int n){
     int numOfSwaps =0;
     for (int i = 0; i < n-1; ++i) {
@@ -18,7 +19,8 @@ int bubbleSort(int arr[], int n){
         }
     }
     return numOfSwaps;
-}// end of bubbleSort
+}// end of bubbleSort()
+
 void swap(int *x, int *y){
     int temp = *x;
      *x = *y;
